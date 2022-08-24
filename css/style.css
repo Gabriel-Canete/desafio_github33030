@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5,20vh);
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header header"
+        "section1 section1 section2 section2"
+        "section3 section3 section4 section4"
+        "section5 section5 section6 section6"
+        "footer footer footer footer";
+}
+
+/* HEADER */
+.header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-area: header;
+    background-color: magenta;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.header ul{
+    display: flex;
+    list-style: none;
+    height: 70px;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+
+.header li{
+    display: flex;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 0 15px;
+}
+
+.header img{
+    height: 150px;
+    width: 150px;
+}
+
+.section1 {
+    grid-area: section1;
+    background-color: black;
+    color: white;
+}
+
+.section2 {
+    grid-area: section2;
+    background-color: black;
+    color: white;
+}
+
+.section3 {
+    grid-area: section3;
+    background-color: black;
+    color: white;
+}
+
+.section4 {
+    grid-area: section4;
+    background-color: black;
+    color: white;
+}
+
+.section5 {
+    grid-area: section5;
+    background-color: black;
+    color: white;
+}
+
+.section6 {
+    grid-area: section6;
+    background-color: black;
+    color: white;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: magenta;
+}
